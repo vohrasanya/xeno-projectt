@@ -1,0 +1,174 @@
+/* Container for the campaign builder */
+.campaign-builder-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+ 
+}
+.content-container{
+  display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Title Styling */
+h2 {
+  text-align: center;
+  color: #2C3E50;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* Card Styling for the rule builder */
+.card {
+  background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #34495E;
+}
+
+/* Styling for the rule condition */
+.rule-condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for fields and operators */
+select,
+input {
+  padding: 10px 15px;
+  border: 1px solid #BDC3C7;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 150px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"] {
+  width: 200px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+select:focus,
+input:focus {
+  border-color: #3498DB;
+  outline: none;
+}
+
+/* Logic selector styling */
+.logic-selector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+/* Button Group Styling */
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+/* Add Condition Button */
+.add-condition-btn {
+  background-color: #28A745;
+  color: white;
+}
+
+.add-condition-btn:hover {
+  background-color: #218838;
+}
+
+.add-condition-btn:focus {
+  outline: none;
+}
+
+/* Preview Button */
+.preview-btn {
+  background-color: #F39C12;
+  color: white;
+}
+
+.preview-btn:hover {
+  background-color: #E67E22;
+}
+
+.preview-btn:focus {
+  outline: none;
+}
+
+/* Save Campaign Button */
+.save-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn:focus {
+  outline: none;
+}
+
+/* Preview Text */
+.preview {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2C3E50;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .rule-condition {
+    flex-direction: column;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-condition-btn,
+  .preview-btn,
+  .save-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
